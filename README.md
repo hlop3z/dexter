@@ -2,10 +2,12 @@
 
 ## Clone Project
 ```sh
-python -m pipenv install build isort black pylint --dev
+python -m pipenv install https://github.com/hlop3z/dexter/blob/main/data/builds/dexter-0.0.1.tar.gz
 ```
 
+---
 # New Project
+---
 
 ## Install **build**
 ```sh
