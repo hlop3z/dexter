@@ -59,10 +59,9 @@ class Handler(watchdog.events.PatternMatchingEventHandler):
 # IF run as < Script >
 # -----------------------------------------------------------------------------
 def main():
-    import os
     from pathlib import Path
 
-    BASE_DIR = Path(os.getcwd()).parents[0].resolve()
+    BASE_DIR = Path(__file__).parents[0].resolve()
 
     event_handler = Handler()
     observer = watchdog.observers.Observer()

@@ -7,6 +7,15 @@ name = "pypi"
 
 [dev-packages]
 build = "*"
+isort = "*"
+black = "*"
+pylint = "*"
+watchdog = "*"
+mkdocs = "*"
+mkdocs-material = "*"
 
 [requires]
 python_version = "3.9"
+
+[pipenv]
+allow_prereleases = true
