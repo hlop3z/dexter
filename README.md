@@ -1,18 +1,23 @@
-# Clone this Project
+# Get this Project
 
-## Clone < **pipenv** >
+## Get (**pipenv**)
 ```sh
 python -m pipenv install https://github.com/hlop3z/dexter/raw/main/data/builds/dexter-0.0.1.tar.gz
 ```
 
-## Clone < **pip** >
+## Get (**pip**)
 ```sh
 pip install https://github.com/hlop3z/dexter/raw/main/data/builds/dexter-0.0.1.tar.gz
 ```
 
 ---
-# New Project
+# New Project (**Clone**)
 ---
+
+## Download
+```sh
+git clone https://github.com/hlop3z/dexter.git
+```
 
 ## Install **build**
 ```sh
