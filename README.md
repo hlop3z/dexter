@@ -21,7 +21,7 @@ git clone https://github.com/hlop3z/dexter.git
 
 ## Install **build**
 ```sh
-python -m pipenv install build isort black pylint --dev
+python -m pipenv install build isort black pylint mkdocs mkdocs-material --dev
 ```
 
 ## Build **Package**
