@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-# -*- coding: utf-8 -*-
 """
 Project --> Watchdog:
     This module is to watch for changes in your Python-Project.
@@ -13,6 +12,17 @@ from pathlib import Path
 
 import watchdog.events
 import watchdog.observers
+
+
+def shell_cmd(name=None, cmd=None, check=True):
+    """
+    Shell-Command Wrapper
+    """
+    print(f"""Running... < {name} >""")
+    try:
+        subprocess.run(cmd, shell=True, check=check)
+    except subprocess.CalledProcessError:
+        print(f"""Error while running {name}""")
 
 
 class Handler(watchdog.events.PatternMatchingEventHandler):
@@ -43,37 +53,33 @@ class Handler(watchdog.events.PatternMatchingEventHandler):
         print(f"""Fixing... { path_to_watch }""")
 
         # After Event - Do Something ...
-
-        print("""Running... < isort >""")
-        subprocess.run(f"""python -m isort { path_to_watch }""", shell=True, check=True)
-
-        print("""Running... < black >""")
-        subprocess.run(f"""python -m black { path_to_watch }""", shell=True, check=True)
-
-        print("""Running... < pylint >""")
-        subprocess.run(
-            f"""python -m pylint { path_to_watch }""", shell=True, check=False
-        )
+        shell_cmd("isort", f'''python -m isort "{ path_to_watch }"''')
+        shell_cmd("black", f'''python -m black "{ path_to_watch }"''')
+        shell_cmd("pylint", f'''python -m pylint "{ path_to_watch }"''', check=False)
 
 
 # -----------------------------------------------------------------------------
-# IF run as < Script >
+# < Script > - Run
 # -----------------------------------------------------------------------------
 def main():
     """Dexter-Watch
     Watch over your project as you write it and ensure you follow code-style (black & isort).
     Also, it rates your code with pylint.
     """
-    base_dir = Path(__file__).parents[0].resolve()
 
+    # Base Directory
+    base_dir = Path(__file__).parents[0]
+
+    # Watchdog Handler
     event_handler = Handler()
     observer = watchdog.observers.Observer()
     observer.schedule(event_handler, path=base_dir, recursive=True)
     observer.start()
 
+    # Run "Server"
     try:
         while True:
-            time.sleep(1)
+            time.sleep(5)
     except KeyboardInterrupt:
         observer.stop()
     observer.join()
