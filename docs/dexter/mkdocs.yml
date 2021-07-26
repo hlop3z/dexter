@@ -5,4 +5,5 @@ theme:
   name: material
 
 nav:
-    - Root: index.md
+    - Pipenv — Cheat Sheet: index.md
+    - Pipenv — Library Template: index.md

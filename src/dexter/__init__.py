@@ -8,11 +8,11 @@ from importlib import import_module, resources
 
 PLUGINS = dict()
 
+# Filter names that do not start with "___" from .__dir__()
 filter_names = lambda apps: [
-    # Filter names that do not start with "___" from {module}.__dir__() list.
-    cls_or_def
-    for cls_or_def in apps
-    if not cls_or_def.startswith("__") and cls_or_def not in ["register"]
+    class_or_def
+    for class_or_def in apps
+    if not class_or_def.startswith("__") and class_or_def not in ["register"]
 ]
 
 

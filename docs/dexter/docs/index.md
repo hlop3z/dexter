@@ -1,11 +1,13 @@
+# **Pipenv** — Cheat Sheet
+
 ## **Create** — Environment
-* `python -m pipenv install <package> --dev` Install to -> **Developers**
+* `python -m pipenv install <package> --dev` Install to -> **Development**
 * `python -m pipenv install <package>` Install to -> **Production**
 ---
 
 ## **Check** — Environment
-* `python -m pipenv check` Install for -> **Developers**
-* `python -m pipenv graph` Install for -> **Production**
+* `python -m pipenv check` Check security vulnerabilities.
+* `python -m pipenv graph` Check dependency graph.
 ---
 
 ## **Lock** — Environment (before: **Deployment**)

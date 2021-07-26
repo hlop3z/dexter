@@ -1,2 +1,1 @@
-from . import plugin_a
-from . import plugin_b
+from . import plugin_a, plugin_b
