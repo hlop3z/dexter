@@ -3,21 +3,21 @@
 /project_root
 ├── /builds         -->  Move the <releases> here.
 ├── /data           -->  Any <data> for the project.
-├── /docs           -->  Write the <documentation> here.
 ├── /dist           -->  Source <distribution>.
+├── /docs           -->  Write the <documentation> here.
 ├── /src            -->  Write the <code> here.
 |   |
-|   └── /project            -->  (Library).
+|   └── /project_name       -->  (Library).
 |       |
 |       └── /pkg1           -->  (Package).
 |       |   ├── __init__.py -->  (Constructor).
-|       |   ├── details.py  -->  (Module).
-|       |   └── creator.py  -->  (Module).
+|       |   ├── creator.py  -->  (Module).
+|       |   └── details.py  -->  (Module).
 |       |
 |       └── /pkg2           -->  (Package).
 |           ├── __init__.py -->  (Constructor).
-|           ├── details.py  -->  (Module).
-|           └── creator.py  -->  (Module).
+|           ├── creator.py  -->  (Module).
+|           └── details.py  -->  (Module).
 |
 ├── /tests      -->  Testing the <code>.
 └── watcher.py  -->  Code style enforcer & rating.
