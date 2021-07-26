@@ -5,6 +5,7 @@ project_root/
 ├── data/           -->  Any <data> for the project.
 ├── dist/           -->  Source <distribution>.
 ├── docs/           -->  Write the <documentation> here.
+├── scripts/        -->  Write the <shell/bash> here.
 ├── src/            -->  Write the <code> here.
 |   |
 |   └── project_name/       -->  (Library).
