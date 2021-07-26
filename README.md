@@ -10,6 +10,7 @@
 |   └── /project_name       -->  (Library).
 |       |
 |       └── /pkg1           -->  (Package).
+|       |   | 
 |       |   ├── __init__.py -->  (Constructor).
 |       |   ├── creator.py  -->  (Module).
 |       |   └── details.py  -->  (Module).
@@ -30,7 +31,11 @@
 
 ## Download
 ```sh
-git clone https://github.com/hlop3z/dexter.git
+git clone https://github.com/hlop3z/dexter.git \
+&& cd dexter/ \
+&& rm -rf .git/ \
+&& rm -rf builds/ \
+&& mkdir builds
 ```
 
 ## Install **Dev-Packages**
