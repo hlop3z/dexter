@@ -1,25 +1,27 @@
 # Welcome to Dexter
 ```
-/project_root
-├── /builds         -->  Move the <releases> here.
-├── /data           -->  Any <data> for the project.
-├── /dist           -->  Source <distribution>.
-├── /docs           -->  Write the <documentation> here.
-├── /src            -->  Write the <code> here.
+project_root/
+├── builds/         -->  Move the <releases> here. 
+├── data/           -->  Any <data> for the project.
+├── dist/           -->  Source <distribution>.
+├── docs/           -->  Write the <documentation> here.
+├── src/            -->  Write the <code> here.
 |   |
-|   └── /project_name       -->  (Library).
+|   └── project_name/       -->  (Library).
+|       ├── __init__.py     -->  (Library: __init__) import [pkg1, pkg2, etc...] in this file.
+|       ├── __main__.py     -->  (Library: __main__) any function you want to run as a <script> with "python -m project_name".
 |       |
-|       └── /pkg1           -->  (Package).
+|       └── pkg1/           -->  (Package).
 |       |   ├── __init__.py -->  (Constructor).
 |       |   ├── creator.py  -->  (Module).
 |       |   └── details.py  -->  (Module).
 |       |
-|       └── /pkg2           -->  (Package).
+|       └── pkg2/           -->  (Package).
 |           ├── __init__.py -->  (Constructor).
 |           ├── creator.py  -->  (Module).
 |           └── details.py  -->  (Module).
 |
-├── /tests      -->  Testing the <code>.
+├── tests/      -->  Testing the <code>.
 └── watcher.py  -->  Code style enforcer & rating.
 ```
 
@@ -49,7 +51,7 @@ python -m build
 
 ## Install **Package**
 ```sh
-python -m pip install dist/{dexter}-0.0.1.tar.gz
+python -m pip install dist/{project_name}-0.0.1.tar.gz
 ```
 ---
 
