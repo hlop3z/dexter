@@ -1,3 +1,31 @@
+# Welcome to Dexter
+```
+/project_root
+├── /builds         -->  Move the <releases> here.
+├── /data           -->  Any <data> for the project.
+├── /docs           -->  Write the <documentation> here.
+├── /dist           -->  Source <distribution>.
+├── /src            -->  Write the <code> here.
+|   |
+|   └── /project            -->  (Library).
+|       |
+|       └── /pkg1           -->  (Package).
+|       |   ├── __init__.py -->  (Constructor).
+|       |   ├── details.py  -->  (Module).
+|       |   └── creator.py  -->  (Module).
+|       |
+|       └── /pkg2           -->  (Package).
+|           ├── __init__.py -->  (Constructor).
+|           ├── details.py  -->  (Module).
+|           └── creator.py  -->  (Module).
+|
+├── /tests      -->  Testing the <code>.
+└── watcher.py  -->  Code style-enforcement & rating.
+```
+
+<br /><br /><br />
+---
+
 # Get this Project
 
 ## Get (**pipenv**)
