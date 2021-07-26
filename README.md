@@ -20,7 +20,7 @@
 |           └── creator.py  -->  (Module).
 |
 ├── /tests      -->  Testing the <code>.
-└── watcher.py  -->  Code style-enforcement & rating.
+└── watcher.py  -->  Code style enforcer & rating.
 ```
 
 <br />
@@ -66,4 +66,3 @@ python -m build
 ```sh
 python -m pip install dist/{dexter}-0.0.1.tar.gz
 ```
-
