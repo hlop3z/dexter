@@ -33,7 +33,7 @@
 git clone https://github.com/hlop3z/dexter.git
 ```
 
-## Install **build**
+## Install **Dev-Packages**
 ```sh
 python -m pipenv install build isort black pylint watchdog mkdocs mkdocs-material --dev --pre
 ```
