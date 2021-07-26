@@ -10,7 +10,6 @@
 |   └── /project_name       -->  (Library).
 |       |
 |       └── /pkg1           -->  (Package).
-|       |   | 
 |       |   ├── __init__.py -->  (Constructor).
 |       |   ├── creator.py  -->  (Module).
 |       |   └── details.py  -->  (Module).
