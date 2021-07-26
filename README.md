@@ -24,7 +24,6 @@
 ```
 
 <br />
----
 
 # Get this Project
 
