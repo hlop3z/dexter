@@ -23,7 +23,7 @@
 └── watcher.py  -->  Code style-enforcement & rating.
 ```
 
-<br /><br /><br />
+<br />
 ---
 
 # Get this Project
