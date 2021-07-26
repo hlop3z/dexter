@@ -29,7 +29,6 @@ project_root/
 <br />
 
 # New Project (**Clone**)
----
 
 ## Download
 ```sh
