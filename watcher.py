@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
-"""
-Project --> Watchdog:
+"""Project --> Watchdog
     This module is to watch for changes in your Python-Project.
     It uses ( isort, black & pylint ) to clean and analyze your <code>.
 """
@@ -63,6 +62,7 @@ class Handler(watchdog.events.PatternMatchingEventHandler):
 # -----------------------------------------------------------------------------
 def main():
     """Dexter-Watch
+
     Watch over your project as you write it and ensure you follow code-style (black & isort).
     Also, it rates your code with pylint.
     """

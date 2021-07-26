@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
-"""
-Project --> Watchdog:
+"""Project --> Watchdog
     This module is to watch for changes in your Python-Project.
     It uses ( isort, black & pylint ) to clean and analyze your <code>.
 """
