@@ -1,1 +1,0 @@
-from dexter import register
