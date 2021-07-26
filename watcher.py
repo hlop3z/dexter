@@ -9,6 +9,7 @@ Project --> Watchdog:
 
 import subprocess
 import time
+from pathlib import Path
 
 import watchdog.events
 import watchdog.observers
@@ -59,13 +60,15 @@ class Handler(watchdog.events.PatternMatchingEventHandler):
 # IF run as < Script >
 # -----------------------------------------------------------------------------
 def main():
-    from pathlib import Path
-
-    BASE_DIR = Path(__file__).parents[0].resolve()
+    """Dexter-Watch
+    Watch over your project as you write it and ensure you follow code-style (black & isort).
+    Also, it rates your code with pylint.
+    """
+    base_dir = Path(__file__).parents[0].resolve()
 
     event_handler = Handler()
     observer = watchdog.observers.Observer()
-    observer.schedule(event_handler, path=BASE_DIR, recursive=True)
+    observer.schedule(event_handler, path=base_dir, recursive=True)
     observer.start()
 
     try:
