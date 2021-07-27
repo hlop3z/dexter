@@ -32,13 +32,7 @@ project_root/
 # New Project (**Clone**)
 
 ## Download
-```sh
-git clone https://github.com/hlop3z/dexter.git \
-&& cd dexter/ \
-&& rm -rf .git/ \
-&& rm -rf builds/ \
-&& mkdir builds
-```
+[Clone Repo Script](https://raw.githubusercontent.com/hlop3z/dexter/main/scripts/clone_repo.sh).
 
 ## Install **Dev-Packages**
 ```sh
