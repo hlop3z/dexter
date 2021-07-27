@@ -34,6 +34,8 @@ project_root/
 ## Download
 [Clone Repo Script](https://raw.githubusercontent.com/hlop3z/dexter/main/scripts/clone_repo.sh).
 
+<br /><br />
+
 ## Install **Dev-Packages**
 ```sh
 python -m pipenv install build isort black pylint watchdog mkdocs mkdocs-material --dev --pre
@@ -55,7 +57,7 @@ python -m pip install dist/{project_name}-0.0.1.tar.gz
 ```
 ---
 
-<br /><br /><br />
+<br /><br />
 # Get this Project
 
 ## Get (**pipenv**)
