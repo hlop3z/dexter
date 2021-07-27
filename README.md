@@ -32,7 +32,7 @@ project_root/
 # New Project (**Clone**)
 [Clone Repo Script](https://raw.githubusercontent.com/hlop3z/dexter/main/scripts/clone_repo.sh).
 
-<br /><br />
+<br />
 
 ## Install **Packages**
 ```sh
