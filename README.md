@@ -30,15 +30,13 @@ project_root/
 <br />
 
 # New Project (**Clone**)
-
-## Download
 [Clone Repo Script](https://raw.githubusercontent.com/hlop3z/dexter/main/scripts/clone_repo.sh).
 
 <br /><br />
 
-## Install **Dev-Packages**
+## Install **Packages**
 ```sh
-python -m pipenv install build isort black pylint watchdog mkdocs mkdocs-material --dev --pre
+python -m pipenv install <package>
 ```
 
 ## Install **Dev-Packages**
@@ -46,12 +44,12 @@ python -m pipenv install build isort black pylint watchdog mkdocs mkdocs-materia
 python -m pipenv install build isort black pylint watchdog mkdocs mkdocs-material --dev --pre
 ```
 
-## Build **Package**
+## Build **My - Package**
 ```sh
 python -m build
 ```
 
-## Install **Package**
+## Install **My - Package**
 ```sh
 python -m pip install dist/{project_name}-0.0.1.tar.gz
 ```
