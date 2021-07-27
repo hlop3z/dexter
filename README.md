@@ -11,6 +11,7 @@ project_root/
 |   └── project_name/       -->  (Library).
 |       ├── __init__.py     -->  (Library: __init__) import [pkg1, pkg2, etc...] in this file.
 |       ├── __main__.py     -->  (Library: __main__) any function you want to run as a <script> with "python -m project_name".
+|       ├── script.py       -->  Script to use in --> setup.cfg --> [options.entry_points] <console_scripts>.
 |       |
 |       └── pkg1/           -->  (Package).
 |       |   ├── __init__.py -->  (Constructor).
@@ -37,6 +38,11 @@ git clone https://github.com/hlop3z/dexter.git \
 && rm -rf .git/ \
 && rm -rf builds/ \
 && mkdir builds
+```
+
+## Install **Dev-Packages**
+```sh
+python -m pipenv install build isort black pylint watchdog mkdocs mkdocs-material --dev --pre
 ```
 
 ## Install **Dev-Packages**
