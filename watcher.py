@@ -52,7 +52,7 @@ class Handler(watchdog.events.PatternMatchingEventHandler):
         print(f"""Fixing... { path_to_watch }""")
 
         # After Event - Do Something ...
-        shell_cmd("isort", f'''python -m isort "{ path_to_watch }"''')
+        shell_cmd("isort", f'''python -m isort --profile black "{ path_to_watch }"''')
         shell_cmd("black", f'''python -m black "{ path_to_watch }"''')
         shell_cmd("pylint", f'''python -m pylint "{ path_to_watch }"''', check=False)
 
