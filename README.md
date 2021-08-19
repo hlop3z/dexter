@@ -63,24 +63,4 @@ sh clone_repo.sh -n example_lib
 <br />
 <br />
 
-# **PipEnv**
-
-## Install **Packages**
-```sh
-python -m pipenv install <package>
-```
-
-## Install **Dev-Packages**
-```sh
-python -m pipenv install build isort black pylint watchdog mkdocs mkdocs-material --dev --pre
-```
-
-## Build **My - Package**
-```sh
-python -m build
-```
-
-## Install **My - Package**
-```sh
-python -m pip install dist/{project_name}-0.0.1.tar.gz
-```
+# [**PipEnv**](./PIPENV.md)
