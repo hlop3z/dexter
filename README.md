@@ -58,7 +58,7 @@ fi
 
 ## Usage:
 ```sh
-sh clone_repo.sh -n example_lib
+sh clone_repo.sh example_lib
 ```
 
 # Go to [**PipEnv**](./PIPENV.md)
