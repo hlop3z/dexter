@@ -61,4 +61,4 @@ fi
 sh clone_repo.sh example_lib
 ```
 
-# Go to [**PipEnv**](./PIPENV.md)
+# Go to [**PipEnv** — Cheat Sheet](./PIPENV.md)
