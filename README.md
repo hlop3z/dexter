@@ -43,10 +43,10 @@ REPO="https://github.com/hlop3z/dexter"
 
 if [ "$1" != "" ]; then
     # Do Cloning
-    git clone $REPO $name
-    cd $name
+    git clone $REPO $1
+    cd $1
     rm -rf .git/
-    mv src/project_name src/$name
+    mv src/project_name src/$1
 else
     # Return Error
     printf "\nPlease enter a name for the project. \n\n"
