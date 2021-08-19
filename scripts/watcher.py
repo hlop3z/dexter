@@ -68,7 +68,7 @@ def main():
     """
 
     # Base Directory
-    base_dir = Path(__file__).parents[0]
+    base_dir = Path(__file__).parents[1]
 
     # Watchdog Handler
     event_handler = Handler()

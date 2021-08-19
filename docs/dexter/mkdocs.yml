@@ -1,9 +1,0 @@
-site_name: My Docs
-site_url : https://example.com/
-
-theme:
-  name: material
-
-nav:
-    - Pipenv — Cheat Sheet: index.md
-    - Pipenv — Library Template: index.md

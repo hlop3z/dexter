@@ -1,11 +1,12 @@
-# Welcome to Dexter
+# Welcome to **Dexter**
 ```
 project_root/
-├── builds/         -->  Move the <releases> here. 
+├── archived/       -->  Move the <releases> here. 
 ├── data/           -->  Any <data> for the project.
 ├── dist/           -->  Source <distribution>.
 ├── docs/           -->  Write the <documentation> here.
 ├── scripts/        -->  Write the <shell/bash> here.
+|   └── watcher.py  -->  Code style enforcer & rating.
 ├── src/            -->  Write the <code> here.
 |   |
 |   └── project_name/       -->  (Library).
@@ -23,14 +24,36 @@ project_root/
 |           ├── creator.py  -->  (Module).
 |           └── details.py  -->  (Module).
 |
-├── tests/      -->  Testing the <code>.
-└── watcher.py  -->  Code style enforcer & rating.
+└── tests/ -->  Testing the <code>.
 ```
 
 <br />
 
-# New Project (**Clone**)
-[Clone Repo Script](https://raw.githubusercontent.com/hlop3z/dexter/main/scripts/clone_repo.sh).
+
+## New Project (**Clone**)
+```sh
+touch clone_repo.sh
+nano clone_repo.sh
+```
+
+## Clone Repo Script:
+```sh
+# Variables
+REPO="https://github.com/hlop3z/dexter"
+
+if [ "$1" != "" ]; then
+    # Do Cloning
+    git clone $REPO $name
+    cd $name
+    mv src/project_name src/$name
+else
+    # Return Error
+    printf "\nPlease enter a name for the project. \n\n"
+    printf "For example: \n"
+    printf "\tclone_repo project_name\n"
+fi
+```
+
 
 ## Usage:
 ```sh
@@ -38,6 +61,9 @@ sh clone_repo.sh -n example_lib
 ```
 
 <br />
+<br />
+
+# **PipEnv**
 
 ## Install **Packages**
 ```sh
@@ -57,13 +83,4 @@ python -m build
 ## Install **My - Package**
 ```sh
 python -m pip install dist/{project_name}-0.0.1.tar.gz
-```
----
-
-<br /><br />
-# Get this Project
-
-## Get (**pipenv**)
-```sh
-python -m pipenv install https://github.com/hlop3z/dexter/raw/main/data/builds/dexter-0.0.1.tar.gz
 ```
