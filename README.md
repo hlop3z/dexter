@@ -45,6 +45,7 @@ if [ "$1" != "" ]; then
     # Do Cloning
     git clone $REPO $name
     cd $name
+    rm -rf .git/
     mv src/project_name src/$name
 else
     # Return Error
