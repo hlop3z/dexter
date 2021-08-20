@@ -1,7 +1,7 @@
 # Welcome to **Dexter**
 ```
 project_root/
-├── archived/       -->  Move the <releases> here. 
+├── archive/        -->  Move the <releases> here. 
 ├── data/           -->  Any <data> for the project.
 ├── dist/           -->  Source <distribution>.
 ├── docs/           -->  Write the <documentation> here.
