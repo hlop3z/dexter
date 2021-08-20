@@ -61,11 +61,11 @@ fi
 sh clone_repo.sh example_lib
 ```
 
+# Go to [**PipEnv** — Cheat Sheet](./PIPENV.md)
+
 <br />
 
 ## When Ready . . .
 ```sh
 python -m build
 ```
-
-# Go to [**PipEnv** — Cheat Sheet](./PIPENV.md)
