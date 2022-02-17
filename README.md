@@ -70,3 +70,11 @@ sh clone_repo.sh example_lib
 ```sh
 python -m build
 ```
+
+```sh
+python -m pip install twine
+```
+
+```sh
+python -m twine upload dist/*
+```
