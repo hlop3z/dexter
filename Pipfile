@@ -13,6 +13,7 @@ pylint = "*"
 watchdog = "*"
 mkdocs = "*"
 mkdocs-material = "*"
+pre-commit = "*"
 
 [requires]
 python_version = "3.9"
